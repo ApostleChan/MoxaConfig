@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"path"
 	"testing"
@@ -22,4 +23,11 @@ func TestTNewSftpclient(t *testing.T) {
 		t.Log("upload success")
 	}
 
+	cli := Cli{
+		user: "root",
+		pwd:  "root",
+		addr: "192.168.100.50:22",
+	}
+	output, err := cli.Run("pwd")
+	fmt.Printf("%v\n%v", output, err)
 }
