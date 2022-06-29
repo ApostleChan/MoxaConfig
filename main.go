@@ -48,6 +48,7 @@ func main() {
 	w := a.NewWindow("DA682B配置工具-v1.0.1")
 
 	w.Resize(fyne.Size{400, 500})
+	w.CenterOnScreen()
 	w.SetFixedSize(false)
 	w.SetIcon(resourceMoxaPng)
 
