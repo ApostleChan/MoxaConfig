@@ -190,8 +190,8 @@ func main() {
 			pwd:  passwd,
 			addr: hostname,
 		}
-		cli.Run("reboot")
 		msgLabel.SetText("重启命令已经执行！")
+		defer cli.Run("reboot")
 	})
 
 	c := container.NewVBox(

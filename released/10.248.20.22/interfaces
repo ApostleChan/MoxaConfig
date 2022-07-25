@@ -1,0 +1,197 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# On Board LAN1~LAN14
+auto eth0
+iface eth0 inet static
+address 10.248.20.22
+network 10.248.20.0
+netmask 255.255.255.0
+gateway 10.248.20.254
+broadcast 10.248.20.255
+
+auto eth1
+iface eth1 inet static
+address 10.248.21.22
+network 10.248.21.0
+netmask 255.255.255.0
+gateway 10.248.21.254
+broadcast 10.248.21.255
+
+auto eth2
+iface eth2 inet static
+address 192.168.1.2
+network 192.168.1.0
+netmask 255.255.255.0
+broadcast 192.168.1.255
+
+auto eth3
+iface eth3 inet static
+address 192.168.6.127
+network 192.168.6.0
+netmask 255.255.255.0
+broadcast 192.168.6.255
+
+auto eth4
+iface eth4 inet static
+address 192.168.7.127
+network 192.168.7.0
+netmask 255.255.255.0
+broadcast 192.168.7.255
+
+auto eth5
+iface eth5 inet static
+address 192.168.8.127
+network 192.168.8.0
+netmask 255.255.255.0
+broadcast 192.168.8.255
+
+auto eth6
+iface eth6 inet static
+address 192.168.9.127
+network 192.168.9.0
+netmask 255.255.255.0
+broadcast 192.168.9.255
+
+auto eth7
+iface eth7 inet static
+address 192.168.10.127
+network 192.168.10.0
+netmask 255.255.255.0
+broadcast 192.168.10.255
+
+auto eth8
+iface eth8 inet static
+address 192.168.11.127
+network 192.168.11.0
+netmask 255.255.255.0
+broadcast 192.168.11.255
+
+auto eth9
+iface eth9 inet static
+address 192.168.12.127
+network 192.168.12.0
+netmask 255.255.255.0
+broadcast 192.168.12.255
+
+auto eth10
+iface eth10 inet static
+address 192.168.13.127
+network 192.168.13.0
+netmask 255.255.255.0
+broadcast 192.168.13.255
+
+auto eth11
+iface eth11 inet static
+address 192.168.14.127
+network 192.168.14.0
+netmask 255.255.255.0
+broadcast 192.168.14.255
+
+auto eth12
+iface eth12 inet static
+address 192.168.15.127
+network 192.168.15.0
+netmask 255.255.255.0
+broadcast 192.168.15.255
+
+auto eth13
+iface eth13 inet static
+address 192.168.16.127
+network 192.168.16.0
+netmask 255.255.255.0
+broadcast 192.168.16.255
+
+# Expansion Card 1: LAN15~LAN23
+auto eth14
+iface eth14 inet static
+address 192.168.17.127
+network 192.168.17.0
+netmask 255.255.255.0
+broadcast 192.168.17.255
+
+auto eth15
+iface eth15 inet static
+address 192.168.18.127
+network 192.168.18.0
+netmask 255.255.255.0
+broadcast 192.168.18.255
+
+auto eth16
+iface eth16 inet static
+address 192.168.19.127
+network 192.168.19.0
+netmask 255.255.255.0
+broadcast 192.168.19.255
+
+auto eth17
+iface eth17 inet static
+address 192.168.20.127
+network 192.168.20.0
+netmask 255.255.255.0
+broadcast 192.168.20.255
+
+auto eth18
+iface eth18 inet static
+address 192.168.21.127
+network 192.168.21.0
+netmask 255.255.255.0
+broadcast 192.168.21.255
+
+auto eth19
+iface eth19 inet static
+address 192.168.22.127
+network 192.168.22.0
+netmask 255.255.255.0
+broadcast 192.168.22.255
+
+auto eth20
+iface eth20 inet static
+address 192.168.23.127
+network 192.168.23.0
+netmask 255.255.255.0
+broadcast 192.168.23.255
+
+auto eth21
+iface eth21 inet static
+address 192.168.24.127
+network 192.168.24.0
+netmask 255.255.255.0
+broadcast 192.168.24.255
+
+# Expansion Card 2: Should not insert to slot
+auto eth22
+iface eth22 inet static
+address 192.168.25.127
+network 192.168.25.0
+netmask 255.255.255.0
+broadcast 192.168.25.255
+
+auto eth23
+iface eth23 inet static
+address 192.168.26.127
+network 192.168.26.0
+netmask 255.255.255.0
+broadcast 192.168.26.255
+
+# Expansion Card 3: Should not insert to slot
+auto eth24
+iface eth24 inet static
+address 192.168.27.127
+network 192.168.27.0
+netmask 255.255.255.0
+broadcast 192.168.27.255
+
+auto eth25
+iface eth25 inet static
+address 192.168.28.127
+network 192.168.28.0
+netmask 255.255.255.0
+broadcast 192.168.28.255
+
